@@ -555,8 +555,7 @@ audio35 = fs.readFileSync('./X4/nyz35.m4a')
 		    case 'menu':
 			menu2 = fs.readFileSync(`./X3/help.jpeg`) 
             const menu3 = await nayla.prepareMessage(from, menu2, MessageType.image, {thumbnail:Buffer.alloc(0)}) 
-            const menu4 = [{buttonId: 'id1', buttonText: {displayText: 'DONASI'}, type: 1},{buttonId: 'id2', buttonText: {displayText: 'INFOBOT'}, type: 1},{buttonId: 'id3', buttonText: {displayText: 'ALLMENU'}, type: 1}] 
-            const menu5 = {
+            const menu4 = [{buttonId: 'id1', buttonText: {displayText: 'DONASI'}, type: 1},{buttonId: 'id2', buttonText: {displayText: 'INFOBOT'}, type: 1}]
             contentText: helpp,
             footerText: `${nama}\n ${tz} RUNTIME : ${kyun(runtime)}`,
             buttons: menu4,
