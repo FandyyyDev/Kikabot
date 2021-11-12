@@ -32,7 +32,7 @@ const _antilink = []
 const _antivirtex = []
 const blocked = []
 // CONST MENU
-const { help } = require('./X1/help')
+const { help } = require('./X1/allmenu')
 const { textpro } = require('./X1/textpro')
 const { audiomenu } = require('./X1/audiomenu')
 const { grubmenu } = require('./X1/grubmenu')
@@ -555,7 +555,8 @@ audio35 = fs.readFileSync('./X4/nyz35.m4a')
 		    case 'menu':
 			menu2 = fs.readFileSync(`./X3/help.jpeg`) 
             const menu3 = await nayla.prepareMessage(from, menu2, MessageType.image, {thumbnail:Buffer.alloc(0)}) 
-            const menu4 = [{buttonId: 'id1', buttonText: {displayText: 'DONASI'}, type: 1},{buttonId: 'id2', buttonText: {displayText: 'INFOBOT'}, type: 1}]
+            const menu4 = [{buttonId: 'id1', buttonText: {displayText: 'DONASI'}, type: 1},{buttonId: 'id2', buttonText: {displayText: 'INFOBOT'}, type: 1}{buttonId: 'id3', buttonText: {displayText: 'OWNERBOT'}, type: 1}] 
+            const menu5 = {
             contentText: helpp,
             footerText: `${nama}\n ${tz} RUNTIME : ${kyun(runtime)}`,
             buttons: menu4,
